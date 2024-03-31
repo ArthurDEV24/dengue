@@ -65,7 +65,8 @@ header {
     border-radius: 5px;
 }
 
-.filhocontribui p {
+.filhocontribui p,
+.filhocontribui h1 {
     margin-inline: 2.3%;
 }
 
