@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #377999;
+    font-family: "Roboto Slab", serif;
+    background-image: linear-gradient(#377999 25% , #003149);
 }
 
 header {
@@ -45,6 +45,7 @@ header {
 .comoforma p,
 .ondecomeco p {
     margin-inline: 5%;
+    font-weight: 520;
 }
 
 .ondecomeco {
@@ -72,7 +73,6 @@ header {
 
 div h1,
 div h2 {
-    font-family: "Roboto Slab", serif;
     color: white; /* Cor do título verde */
     text-align: center;
     letter-spacing: 1px;
