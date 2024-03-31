@@ -26,9 +26,9 @@ nav li a {
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
-    transition: background-color 0.5s; /* Efeito de transição */
+    transition: background-color 0.4s; /* Efeito de transição */
     border: 2px solid white; /* Adicionando borda ao redor do texto */
-    border-radius: 5px; /* Borda com cantos arredondados */
+    border-radius: 15px; /* Borda com cantos arredondados */
     margin: 5px; /* Espaçamento entre os itens do menu */
 }
 
