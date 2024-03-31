@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #377999;
 }
 
 header {
@@ -16,35 +17,31 @@ header {
     width: 90%;
     padding: 10px;
     
-    
 }
 
 .oquee {
     width: 83.6%;
     margin-right: 40px;
-    border: 2px solid #377999;
+    border: 2px solid white;
     border-radius: 5px; 
     
 }
 
-.oquee p,
-.comotrans p {
-    margin-inline: 5%;
-}
-
 .comotrans {
     width: 83.6%;
-    border: 2px solid #377999;
+    border: 2px solid white;
     border-radius: 5px; 
 }
 
 .comoforma {
     width: 83.6%;
     margin-right: 40px;
-    border: 2px solid #377999;
+    border: 2px solid white;
     border-radius: 5px; 
 }
 
+.oquee p,
+.comotrans p,
 .comoforma p,
 .ondecomeco p {
     margin-inline: 5%;
@@ -52,7 +49,7 @@ header {
 
 .ondecomeco {
     width: 83.6%;
-    border: 2px solid #377999;
+    border: 2px solid white;
     border-radius: 5px; 
 }
 
@@ -64,7 +61,7 @@ header {
 }
 
 .filhocontribui {
-    border: 2px solid #377999;
+    border: 2px solid white;
     border-radius: 5px;
 }
 
@@ -74,20 +71,19 @@ header {
 
 div h1,
 div h2 {
-    color: #377999; /* Cor do título verde */
+    color: white; /* Cor do título verde */
     text-align: center;
 }
-
 
 div p {
     text-align: justify;
     line-height: 1.5;
-    
+    color: white;
 }
 
 .btn-voltar {
-    background-color: #377999;
-    color: white;
+    background-color: white;
+    color: #377999;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
