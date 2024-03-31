@@ -20,6 +20,7 @@ nav li {
 }
 
 nav li a {
+    font-family: "Roboto Slab", serif;
     display: inline-block;
     color: white;
     text-align: center;

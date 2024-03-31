@@ -14,7 +14,7 @@ header {
     margin: 20px auto;
     flex-direction: row;
     display: flex;
-    width: 90%;
+    width: 1000px;
     padding: 10px;
     
 }
@@ -71,8 +71,11 @@ header {
 
 div h1,
 div h2 {
+    font-family: "Roboto Slab", serif;
     color: white; /* Cor do título verde */
     text-align: center;
+    letter-spacing: 1px;
+    
 }
 
 div p {
