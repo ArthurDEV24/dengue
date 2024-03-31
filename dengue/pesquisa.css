@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding-top: 15px;
+    margin-left: 5px;
+}
+
+.pesquisapai {
+    
+    margin: 20px auto;
+    flex-direction: row;
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    
+    
+}
+
+.oquee {
+    min-width: 47.8%;
+    margin-right: 40px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px; 
+    
+}
+
+.oquee p {
+    margin-inline: 5%;
+}
+
+.comotrans {
+    
+    border: 2px solid #4CAF50;
+    border-radius: 5px; 
+}
+
+.comotrans p {
+    margin-inline: 5%;
+}
+
+.pesquisamae {
+    
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    
+}
+
+.comoforma {
+    max-width: 47.8%;
+    margin-right: 40px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px; 
+}
+
+.comoforma p {
+    margin-inline: 5%;
+}
+
+.ondecomeco {
+    border: 2px solid #4CAF50;
+    border-radius: 5px; 
+}
+
+.ondecomeco p {
+    margin-inline: 5%;
+}
+
+.oquecontribui {
+    margin: 20px auto;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    
+    
+}
+
+div h1 {
+    color: #4CAF50; /* Cor do título verde */
+    text-align: center;
+}
+
+div h2 {
+    color: #4CAF50; /* Cor do título verde */
+    text-align: center;
+}
+
+div p {
+    text-align: justify;
+    line-height: 1.5;
+    
+}
+
+.btn-voltar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; /* Cursor ao passar */
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-voltar:hover {
+    background-color: #135b40; /* Cor de fundo mais escura ao passar o mouse */
+}

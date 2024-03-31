@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4CAF50; /* Cor de fundo verde */
+    overflow: hidden;
+}
+
+
+nav li {
+    float: left;
+}
+
+
+nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Efeito de transição */
+    border: 2px solid white; /* Adicionando borda ao redor do texto */
+    border-radius: 5px; /* Borda com cantos arredondados */
+    margin: 5px; /* Espaçamento entre os itens do menu */
+}
+
+
+nav li a:hover {
+    background-color: #135b40; /* Cor de fundo mais escura ao passar o mouse */
+}
