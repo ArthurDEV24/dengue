@@ -43,7 +43,9 @@ header {
 .oquee p,
 .comotrans p,
 .comoforma p,
-.ondecomeco p {
+.ondecomeco p,
+.filhocontribui h1,
+.filhocontribui p {
     margin-inline: 5%;
     font-weight: 520;
 }
