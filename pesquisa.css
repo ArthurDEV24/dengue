@@ -9,7 +9,7 @@ header {
 }
 
 .pesquisapai {
-    
+    margin: 20px auto;
     flex-direction: row;
     display: flex;
     width: 90%;
@@ -19,7 +19,7 @@ header {
 }
 
 .oquee {
-    min-width: 47.8%;
+    width: 83.6%;
     margin-right: 40px;
     border: 2px solid #4CAF50;
     border-radius: 5px; 
@@ -31,7 +31,7 @@ header {
 }
 
 .comotrans {
-    min-width: 47.8%;
+    width: 83.6%;
     border: 2px solid #4CAF50;
     border-radius: 5px; 
 }
@@ -41,7 +41,7 @@ header {
 }
 
 .pesquisamae {
-    
+    margin: 20px auto;
     flex-direction: row;
     display: flex;
     width: 90%;
@@ -50,7 +50,7 @@ header {
 }
 
 .comoforma {
-    min-width: 47.8%;
+    width: 83.6%;
     margin-right: 40px;
     border: 2px solid #4CAF50;
     border-radius: 5px; 
@@ -61,7 +61,7 @@ header {
 }
 
 .ondecomeco {
-    min-width: 47.8%;
+    width: 83.6%;
     border: 2px solid #4CAF50;
     border-radius: 5px; 
 }
@@ -72,13 +72,18 @@ header {
 
 .oquecontribui {
     margin: 20px auto;
-    flex-direction: column;
     width: 90%;
     padding: 10px;
+    
+}
+
+.filhocontribui {
     border: 2px solid #4CAF50;
     border-radius: 5px;
-    
-    
+}
+
+.filhocontribui p {
+    margin-inline: 2.3%;
 }
 
 div h1 {
