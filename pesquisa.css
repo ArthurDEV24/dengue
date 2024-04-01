@@ -13,12 +13,6 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
 /* Estilos do Cabeçalho */
 header {
     background: linear-gradient(to right, #E44617, #FB5F2D, #F28143, #FB5F2D, #E44617);
@@ -67,6 +61,11 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+
+
+.oquecontribui {
+    margin: 3%;
 }
 
 .botao-container,
