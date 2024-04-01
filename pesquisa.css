@@ -83,7 +83,7 @@ footer p {
     background-color: white;
     color: #FB5F2D;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     padding: 10px 20px;
     border-radius: 15px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
@@ -100,5 +100,5 @@ footer p {
 
 .botao.texto-longo {
     font-size: 40px;
-    margin: 100px;
+    margin: 50px;
 }
