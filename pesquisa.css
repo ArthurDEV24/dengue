@@ -90,6 +90,7 @@ footer p {
     margin: 0 10px;
     cursor: pointer;
     margin-bottom: 40px;
+    transition: transform 0.3s ease;
 }
 
 .botao:hover {
