@@ -1,100 +1,145 @@
-body {
+/* Reset de Estilos */
+* {
     margin: 0;
-    font-family: "Roboto Slab", serif;
-    background-image: linear-gradient(#377999 25% , #003149);
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: #f7f7f7;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Estilos do Cabeçalho */
 header {
-    padding-top: 15px;
-    margin-left: 5px;
-}
-
-.pesquisapai,
-.pesquisamae {
-    margin: 20px auto;
-    flex-direction: row;
-    display: flex;
-    width: 1000px;
-    padding: 10px;
-    
-}
-
-.oquee {
-    width: 836px;
-    margin-right: 40px;
-    border: 2px solid white;
-    border-radius: 5px; 
-    
-}
-
-.comotrans {
-    width: 836px;
-    border: 2px solid white;
-    border-radius: 5px; 
-}
-
-.comoforma {
-    width: 836px;
-    margin-right: 40px;
-    border: 2px solid white;
-    border-radius: 5px; 
-}
-
-.oquee p,
-.comotrans p,
-.comoforma p,
-.ondecomeco p,
-.filhocontribui h1,
-.filhocontribui p {
-    margin-inline: 5%;
-    font-weight: 520;
-}
-
-.ondecomeco {
-    width: 836px;
-    border: 2px solid white;
-    border-radius: 5px; 
-}
-
-.oquecontribui {
-    margin: 20px auto;
-    width: 1000px;
-    padding: 10px;
-    
-}
-
-.filhocontribui {
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-
-div h1,
-div h2 {
-    color: white; /* Cor do título verde */
+    background: linear-gradient(to right, #E44617, #FB5F2D, #F28143, #FB5F2D, #E44617);
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    letter-spacing: 1px;
-    margin-inline: 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-div p {
-    text-align: justify;
-    line-height: 1.5;
-    color: white;
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.btn-voltar {
-    background-color: #377999;
-    color: white;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 15px;
-    cursor: pointer; /* Cursor ao passar */
-    transition: background-color 0.4s;
-    font-size: 16px;
+.logo img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-voltar:hover {
-    background-color: #E44617; /* Cor de fundo mais escura ao passar o mouse */
+nav ul li a:hover {
+    background-color: #377999;
+    color: #f2f2f2;
+}
+
+/* Estilos do Conteúdo */
+main {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #FB5F2D;
+    border-bottom: 2px solid #377999;
+    padding-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos do Rodapé */
+footer {
+    background: linear-gradient(to right, #222, #222, #333, #222, #222);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.botao-container,
+.botao-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    width: 480px;
+    height: 150px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.botao.texto-longo {
+    font-size: 16px;
 }

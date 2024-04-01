@@ -15,75 +15,89 @@
     <header>
         <a href="index.html" class="btn-voltar">Voltar</a>
     </header>
-    <div class="pesquisapai">
+
+    <div class="botao-container">
+        <button class="botao" onclick="toggleTexto1()">O que é a dengue?</button>
+        <button class="botao" onclick="toggleTexto2()">Como ela é transmitida?</button>
+        <button class="botao" onclick="toggleTexto3()">Como é formado o mosquito da dengue?</button>
+        <button class="botao" onclick="toggleTexto4()">Onde teve o primeiro caso de dengue?</button>
+    </div>
+    
+    <div class="botao-container2">
         
-        <div class="oquee">
-
-            <h1>O que é a dengue?</h1>
-
-            <p>A dengue é uma doença viral transmitida por mosquitos que pode ser apresentada de forma benigna ou grave, afetando mais em áreas tropicais e subtropicais.</p>
-            
-        </div>
-
-        <div class="comotrans">
-            <h1>Como ela é transmitida?</h1>
-
-            <p>É transmitida através de uma picada da fêmea do mosquito Aedes aegypti, não sendo transmitida pelo contato direto ou por meio de fontes de água ou alimento.</p>
-
-        </div>
     </div>
 
-
-
-    <div class="pesquisamae">
-        <div class="comoforma">
-            <h1>Como é formado o mosquito da dengue?</h1>
-
-            <p> A fêmea vai depositar seus óvulos na borda dos recipientes com água limpa parada e esses ovos após dois ou três dias com o líquido viram larvas e dias depois chegam a fase da pupa e esse ciclo dura em torno de 48 horas (2 dias) e ao término se transformam em mosquitos.</p>
-            
-        </div>
-
-        <div class="ondecomeco">
-            <h1>Onde teve o primeiro caso de dengue?</h1>
-
-            <p>O mosquito da dengue é originário do Egito, na África e vem se espalhando pelas regiões tropicais e subtropicais do planeta desde o século 16.</p>
-
-        </div>
-    </div>
-    
-
-    
     <div class="oquecontribui">
         <h1>Fatores que contribuíram para casos da dengue</h1>
 
-        <p>Condições precárias, acesso inadequado de fornecimentos de água, tratamento de esgoto e de lixo.</p>
-        
         <div class="filhocontribui">
-            
-                <br>
-                <h2>Aumento de casos de dengue durante o verão</h2>
-                <br>
 
-                <p>É comum observar um aumento nas ocorrências de dengue durante o verão, pois o número de chuvas e poças d’água aumenta, facilitando a reprodução do mosquito Aedes aegypti. No entanto, possíveis fenômenos associados ao El Niño, como chuvas intensas e calor excessivo, têm potencializado esses fatores, resultando em uma epidemia mais grave, algo que não era observado desde 2019. O especialista explica que a cada quatro ou cinco anos ocorre uma explosão de um novo tipo de dengue, levando ao surgimento de novos sorotipos.</p>
-                
-                <p>Além disso, é importante destacar que muitos moradores não estão atentos à vigilância no que diz respeito ao surgimento de novos criadouros, os quais podem estar presentes em telhados, calhas, pneus, caixas d’água destampadas, entre outros locais.</p>
-        
-            
-                <br>
-                <h2>Diminuição de casos de dengue no inverno</h2>
-                <br>
+            <br>
+            <h2>Aumento de casos de dengue durante o verão</h2>
+            <br>
 
-                <p>Para a diminuição da dengue inclui campanhas de conscientização pública, esforços de controle de vetor (como a eliminação de criadouros de mosquitos), melhorias na infraestrutura de saúde e medidas preventivas implementadas pelas autoridades de saúde.</p>
-                <p>Além disso, essa diminuição também ocorre, principalmente, porque no inverno as chuvas são menos frequentes, o que dificulta a proliferação do mosquito.</p>
-        
-            
+            <p>É comum observar um aumento nas ocorrências de dengue durante o verão, pois o número de chuvas e poças d’água aumenta, facilitando a reprodução do mosquito Aedes aegypti. No entanto, possíveis fenômenos associados ao El Niño, como chuvas intensas e calor excessivo, têm potencializado esses fatores, resultando em uma epidemia mais grave, algo que não era observado desde 2019. O especialista explica que a cada quatro ou cinco anos ocorre uma explosão de um novo tipo de dengue, levando ao surgimento de novos sorotipos.</p>
+
+            <p>Além disso, é importante destacar que muitos moradores não estão atentos à vigilância no que diz respeito ao surgimento de novos criadouros, os quais podem estar presentes em telhados, calhas, pneus, caixas d’água destampadas, entre outros locais.</p>
+
+
+            <br>
+            <h2>Diminuição de casos de dengue no inverno</h2>
+            <br>
+
+            <p>Para a diminuição da dengue inclui campanhas de conscientização pública, esforços de controle de vetor (como a eliminação de criadouros de mosquitos), melhorias na infraestrutura de saúde e medidas preventivas implementadas pelas autoridades de saúde.</p>
+            <p>Além disso, essa diminuição também ocorre, principalmente, porque no inverno as chuvas são menos frequentes, o que dificulta a proliferação do mosquito.</p>
+
+
         </div>
-        
+
     </div>
 
-    
-    
-    
+    <script>
+        function toggleTexto1() {
+            var button = document.querySelector('.botao:nth-of-type(1)');
+            if (button.textContent === 'O que é a dengue?') {
+                button.textContent = 'A dengue é uma doença viral transmitida por mosquitos que pode ser apresentada de forma benigna ou grave, afetando mais em áreas tropicais e subtropicais.';
+                button.classList.add('texto-longo');
+            } else {
+                button.textContent = 'O que é a dengue?';
+                button.classList.remove('texto-longo');
+            }
+        }
+
+        function toggleTexto2() {
+            var button = document.querySelector('.botao:nth-of-type(2)');
+            if (button.textContent === 'Como ela é transmitida?') {
+                button.textContent = 'É transmitida através de uma picada da fêmea do mosquito Aedes aegypti, não sendo transmitida pelo contato direto ou por meio de fontes de água ou alimento.';
+                button.classList.add('texto-longo');
+            } else {
+                button.textContent = 'Como ela é transmitida?';
+                button.classList.remove('texto-longo');
+            }
+        }
+
+        function toggleTexto3() {
+            var button = document.querySelector('.botao:nth-of-type(3)');
+            if (button.textContent === 'Como é formado o mosquito da dengue?') {
+                button.textContent = ' A fêmea vai depositar seus óvulos na borda dos recipientes com água limpa parada e esses ovos após dois ou três dias com o líquido viram larvas e dias depois chegam a fase da pupa e esse ciclo dura em torno de 48 horas (2 dias) e ao término se transformam em mosquitos.';
+                button.classList.add('texto-longo');
+            } else {
+                button.textContent = 'Como é formado o mosquito da dengue?';
+                button.classList.remove('texto-longo');
+            }
+        }
+
+        function toggleTexto4() {
+            var button = document.querySelector('.botao:nth-of-type(4)');
+            if (button.textContent === 'Onde teve o primeiro caso de dengue?') {
+                button.textContent = 'O mosquito da dengue é originário do Egito, na África e vem se espalhando pelas regiões tropicais e subtropicais do planeta desde o século 16.';
+                button.classList.add('texto-longo');
+            } else {
+                button.textContent = 'Onde teve o primeiro caso de dengue?';
+                button.classList.remove('texto-longo');
+            }
+        }
+    </script>
 
 </body>
 
