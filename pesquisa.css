@@ -98,5 +98,6 @@ footer p {
 }
 
 .botao.texto-longo {
+    font-size: 20px;
     margin: 50px;
 }
