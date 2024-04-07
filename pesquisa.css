@@ -11,85 +11,58 @@ body {
     background-color: #f7f7f7;
     color: #000000;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 /* Estilos do Cabeçalho */
 header {
     background: linear-gradient(to right, #E44617, #FB5F2D, #F28143, #FB5F2D, #E44617);
     color: white;
-    padding: 20px 0;
+    padding: 1.45vw 0; /* Padding em relação à largura da viewport */
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 3vw; /* Tamanho de fonte em relação à largura da viewport */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+nav ul {
+    list-style-type: none;
+}
 
-header a {
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.8vw; /* Tamanho de fonte em relação à largura da viewport */
     font-weight: bold;
-    padding: 15px 20px;
-    border-radius: 5px;
+    padding: 1vw 2vw; /* Padding em relação à largura da viewport */
+    border-radius: 5px; 
     transition: background-color 0.3s, color 0.3s;
 }
 
-header a:hover {
+nav ul li a:hover {
     background-color: #377999;
     color: #f2f2f2;
 }
 
 .logo img {
-    height: 50px;
+    height: 10vw; /* Altura da imagem em relação à largura da viewport */
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 2vw;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos do Conteúdo */
-.botao-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.botao {
-    font-weight: bold;
-    width: 100%;
-    background-color: white;
-    color: #FB5F2D;
-    border: none;
-    font-size: 30px;
-    padding: 10px 20px;
-    border-radius: 15px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-    margin: 0 10px;
-    cursor: pointer;
-    margin-bottom: 40px;
-    transition: transform 0.3s ease, background-color 0.3s;
-}
-
-.botao:hover {
-    transform: translateY(-5px);
-    background-color: #f2f2f2;
-    color: #FB5F2D;
-}
-
-.botao.texto-longo {
-    font-size: 20px;
-    margin: 50px;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.2);
 }
 
 .oquecontribui {
-    margin: 3%;
+    margin: 10vw 2vw 2vw 2vw;
+    font-size: 1.5vw;
+}
+.filhocontribui {
+    font-size: 1.2vw;
 }
 
 /* Estilos do Rodapé */
@@ -97,9 +70,44 @@ footer {
     background: linear-gradient(to right, #222, #222, #333, #222, #222);
     color: #f2f2f2;
     text-align: center;
-    padding: 20px 0;
+    padding: 4vw 0; /* Padding em relação à largura da viewport */
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 2vw; /* Tamanho de fonte em relação à largura da viewport */
 }
+
+/* Estilos dos Botões */
+.botao-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw; /* Margem em relação à largura da viewport */
+    flex-wrap: wrap;
+}
+
+.botao {
+    width: 70%;
+    font-weight: bold;
+     /* Largura dos botões em relação à largura da viewport */
+    background-color: white;
+    color: #FB5F2D;
+    border: none;
+    font-size: 3vw; /* Tamanho de fonte em relação à largura da viewport */
+    padding: 2vw 4vw; /* Padding em relação à largura da viewport */
+    border-radius: 4vw; /* Raio do border em relação à largura da viewport */
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.2);
+    margin: 2vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transition: all 0.5s ease;
+}
+
+.botao:hover {
+    transform: translateY(-1vw); /* Efeito de levantar ao passar o mouse */
+}
+.botao.texto-longo {
+    font-size: 2.6vw;
+}
+
