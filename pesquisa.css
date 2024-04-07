@@ -15,7 +15,7 @@ body {
 
 /* Estilos do Cabeçalho */
 header {
-    width: auto;
+    width: 98.1vw;
     background: linear-gradient(to right, #E44617, #FB5F2D, #F28143, #FB5F2D, #E44617);
     color: white;
     padding: 2vw 0; /* Padding em relação à largura da viewport */

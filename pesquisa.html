@@ -10,11 +10,10 @@
 
 <body>
     <header>
-        <h1>Meu Site</h1>
+        <h1>Dengue Alert</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="btn-voltar">Voltar</a></li>
-                <li><a href="curiosidade.html">Curiosidades</a></li>
+                <li><a href="index.html" class="btn-voltar">Voltar à página inicial</a></li>
                 <li><a href="folders.html">Panfletos sobre a Dengue</a></li>
                 <li><a href="vacina.html">Existe vacina contra a Dengue?</a></li>
             </ul>
@@ -99,9 +98,13 @@
         function toggleTexto4() {
             var button = document.querySelector('.botao:nth-of-type(4)');
             if (button.textContent === 'Sintomas da Dengue') {
-                button.textContent = 'Sintomas da Dengue: Febre alta (> 38,5ºC), dores musculares intensas, dor ao movimentar os olhos, mal-estar, falta de apetite, dor de cabeça e manchas vermelhas no corpo. Sinais de alarme da dengue: dor abdominal, vômitos persistentes, acúmulo de líquidos (ascite, derrame pleural, derrame pericárdico), hipotensão postural e/ou lipotímia, letargia e/ou irritabilidade, hepatomegalia maior do que 2 cm abaixo do rebordo costal, sangramento de mucosas e aumento progressivo do hematócrito.';
+                button.textContent = '- Sintomas iniciais: Febre alta, dores musculares, dor ao movimentar os olhos, mal-estar e falta de apetite.','- Sintomas avançados: Dor abdominal, vômitos persistentes, manchas vermelhas na pele e complicações como acúmulo de líquidos, hipotensão postural e sangramento de mucosas.';
                 button.classList.add('texto-longo');
-            } else {
+            } else if (button.textContent === '- Sintomas iniciais: Febre alta, dores musculares, dor ao movimentar os olhos, mal-estar e falta de apetite.') {
+            button.textContent = '- Sintomas avançados: Dor abdominal, vômitos persistentes, manchas vermelhas na pele e complicações como acúmulo de líquidos, hipotensão postural e sangramento de mucosas.';
+                button.classList.add
+            }
+            else {
                 button.textContent = 'Sintomas da Dengue';
                 button.classList.remove('texto-longo');
             }
