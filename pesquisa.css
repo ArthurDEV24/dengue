@@ -11,6 +11,8 @@ body {
     background-color: #f7f7f7;
     color: #000000;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilos do Cabeçalho */
@@ -51,34 +53,16 @@ header a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos do Rodapé */
-footer {
-    background: linear-gradient(to right, #222, #222, #333, #222, #222);
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-
-.oquecontribui {
-    margin: 3%;
-}
-
-.botao-container,
-.botao-container2 {
+/* Estilos do Conteúdo */
+.botao-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .botao {
     font-weight: bold;
-    flex-wrap: wrap;
     width: 100%;
     background-color: white;
     color: #FB5F2D;
@@ -90,15 +74,32 @@ footer p {
     margin: 0 10px;
     cursor: pointer;
     margin-bottom: 40px;
-    transition: transform 0.3s ease;
-    transition: all 0.5s ease;
+    transition: transform 0.3s ease, background-color 0.3s;
 }
 
 .botao:hover {
     transform: translateY(-5px);
+    background-color: #f2f2f2;
+    color: #FB5F2D;
 }
 
 .botao.texto-longo {
     font-size: 20px;
     margin: 50px;
+}
+
+.oquecontribui {
+    margin: 3%;
+}
+
+/* Estilos do Rodapé */
+footer {
+    background: linear-gradient(to right, #222, #222, #333, #222, #222);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
 }
