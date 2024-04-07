@@ -18,7 +18,7 @@ header {
     width: auto;
     background: linear-gradient(to right, #E44617, #FB5F2D, #F28143, #FB5F2D, #E44617);
     color: white;
-    padding: 1.4vw 0; /* Padding em relação à largura da viewport */
+    padding: 2vw 0; /* Padding em relação à largura da viewport */
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -27,6 +27,7 @@ header h1 {
     font-size: 5vw; /* Tamanho de fonte em relação à largura da viewport */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 nav ul {
     margin-top: 3vw;
     list-style-type: none;
@@ -61,22 +62,32 @@ nav ul li a:hover {
 
 .oquecontribui {
     margin: 10vw 2vw 2vw 2vw;
-    font-size: 4vw;
+    font-size: 1.5vw;
 }
+
 .filhocontribui {
-    font-size: 2.8vw;
+    font-size: 1.2vw;
 }
 
 /* Estilos do Rodapé */
 footer {
+    display: flex;
     background: linear-gradient(to right, #222, #222, #333, #222, #222);
     color: #f2f2f2;
-    text-align: center;
-    padding: 4vw 0; /* Padding em relação à largura da viewport */
+    justify-content: space-between;
+    padding: 4vw 1vw; /* Padding em relação à largura da viewport */
 }
 
 footer p {
-    font-size: 2vw; /* Tamanho de fonte em relação à largura da viewport */
+    font-size: 1vw; /* Tamanho de fonte em relação à largura da viewport */
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(200, 200, 200);
 }
 
 /* Estilos dos Botões */
@@ -92,7 +103,6 @@ footer p {
 .botao {
     width: 100%;
     font-weight: bold;
-     /* Largura dos botões em relação à largura da viewport */
     background-color: white;
     color: #FB5F2D;
     border: none;
@@ -103,14 +113,58 @@ footer p {
     margin: 2vw;
     margin-bottom: 5vw;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    transition: all 0.5s ease;
+    transition: transform 0.3s ease, all 0.5s ease;
 }
 
 .botao:hover {
     transform: translateY(-1vw); /* Efeito de levantar ao passar o mouse */
 }
+
 .botao.texto-longo {
     font-size: 2.6vw;
 }
 
+/* Media Query para telas menores, como smartphones */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 8vw;
+    }
+
+    nav ul li a {
+        font-size: 4vw;
+        padding: 1vw 2vw;
+    }
+
+    .logo img {
+        height: 12vw;
+        margin-right: 4vw;
+    }
+
+    .oquecontribui {
+        margin: 10vw 5vw 2vw 5vw;
+        font-size: 4vw;
+    }
+
+    .filhocontribui {
+        font-size: 3vw;
+    }
+
+    footer {
+        padding: 8vw 1vw;
+    }
+
+    footer p {
+        font-size: 2vw;
+    }
+
+    .botao {
+        font-size: 6vw;
+        padding: 4vw 8vw;
+        border-radius: 8vw;
+        margin: 4vw;
+    }
+
+    .botao.texto-longo {
+        font-size: 4vw;
+    }
+}
