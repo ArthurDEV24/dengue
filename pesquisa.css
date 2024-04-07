@@ -90,7 +90,7 @@ footer p {
 }
 
 .botao {
-    width: 70%;
+    width: 100%;
     font-weight: bold;
      /* Largura dos botões em relação à largura da viewport */
     background-color: white;
@@ -101,6 +101,7 @@ footer p {
     border-radius: 4vw; /* Raio do border em relação à largura da viewport */
     box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.2);
     margin: 2vw;
+    margin-bottom: 5vw;
     cursor: pointer;
     transition: transform 0.3s ease;
     transition: all 0.5s ease;
