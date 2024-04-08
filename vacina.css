@@ -97,12 +97,13 @@ section ul {
     list-style: none;
     padding: 0;
 }
+
 .logo img {
     height: 50px;
     vertical-align: middle;
     margin-right: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 /* Estilos do Rodapé */
@@ -117,13 +118,41 @@ footer div p {
     font-size: 16px;
 }
 
-footer div img{
+footer div img {
     border-radius: 60px;
     width: 60px;
     height: 60px;
 }
 
-footer div a{
+footer div a {
     text-decoration: none;
     color: white;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0; /* Aumenta o padding no cabeçalho para telas menores */
+    }
+
+    header h1 {
+        font-size: 36px; /* Tamanho fixo de fonte para o cabeçalho em telas menores */
+    }
+
+    nav ul {
+        margin-top: 20px; /* Reduz a margem superior do menu de navegação */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Tamanho fixo de fonte para os itens de menu em telas menores */
+        padding: 10px 20px; /* Ajusta o padding dos itens do menu para telas menores */
+    }
+
+    section {
+        width: 100%; /* Faz com que as seções ocupem toda a largura em telas menores */
+    }
+
+    section h2 {
+        font-size: 22px; /* Ajusta o tamanho da fonte dos títulos das seções */
+    }
 }
